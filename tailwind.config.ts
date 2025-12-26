@@ -53,6 +53,9 @@ export default {
         },
         "surface-soft": "hsl(var(--surface-soft))",
         "surface-glass": "hsl(var(--surface-glass))",
+        "logo-blue": "hsl(var(--logo-blue))",
+        "logo-pink": "hsl(var(--logo-pink))",
+        "logo-teal": "hsl(var(--logo-teal))",
       },
       borderRadius: {
         lg: "var(--radius)",

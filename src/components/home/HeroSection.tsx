@@ -15,8 +15,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Gradient */}
       <div className="absolute inset-0 gradient-bg" />
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-primary/20 via-pink-500/10 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-primary/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-logo-blue/20 via-logo-pink/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-logo-teal/20 via-logo-blue/10 to-transparent rounded-full blur-3xl" />
 
       {/* Floating Icons */}
       {floatingIcons.map(({ Icon, position, delay }, index) => (
@@ -82,7 +82,7 @@ const HeroSection = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 transition-opacity text-primary-foreground rounded-full px-8 h-14 text-lg font-medium group"
+              className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-secondary-foreground rounded-full px-8 h-14 text-lg font-medium group"
             >
               Get Started
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

@@ -74,7 +74,7 @@ const ServicesSection = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 transition-opacity text-primary-foreground rounded-full px-8"
+            className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-secondary-foreground rounded-full px-8"
           >
             Schedule a Consultation
           </Button>

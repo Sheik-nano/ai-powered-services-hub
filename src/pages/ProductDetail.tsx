@@ -31,7 +31,7 @@ const ProductDetail = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-pink-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-logo-blue/10 via-background to-logo-pink/10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -63,7 +63,7 @@ const ProductDetail = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 text-primary-foreground rounded-full px-8 py-6 text-lg">
+                <Button className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 text-secondary-foreground rounded-full px-8 py-6 text-lg">
                   Request Demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -152,7 +152,7 @@ const ProductDetail = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-pink-500/20 rounded-3xl blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-r from-logo-blue/20 via-logo-pink/10 to-logo-teal/20 rounded-3xl blur-3xl" />
             <div className="relative bg-background rounded-3xl border border-border/50 overflow-hidden shadow-2xl">
               <div className="flex items-center gap-2 px-6 py-4 border-b border-border/50 bg-muted/30">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -215,7 +215,7 @@ const ProductDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-primary/20 via-background to-pink-500/20 rounded-3xl p-12 text-center border border-border/50"
+            className="relative bg-gradient-to-br from-logo-blue/20 via-background to-logo-teal/20 rounded-3xl p-12 text-center border border-border/50"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
               Ready to Get Started?
@@ -224,7 +224,7 @@ const ProductDetail = () => {
               Transform your operations with {product.name}. Schedule a demo today and see the difference.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 text-primary-foreground rounded-full px-8 py-6 text-lg">
+              <Button className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 text-secondary-foreground rounded-full px-8 py-6 text-lg">
                 Schedule Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
