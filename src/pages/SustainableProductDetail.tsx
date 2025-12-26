@@ -31,8 +31,8 @@ const SustainableProductDetail = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-background to-emerald-500/10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-green-500/5 rounded-full blur-3xl" />
+        <div className="absolute inset-0 gradient-bg" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 relative z-10">
           <Link
@@ -49,7 +49,7 @@ const SustainableProductDetail = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${product.color} text-white mb-6`}>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary to-pink-500 text-primary-foreground mb-6">
                 <Leaf className="w-4 h-4" />
                 <span className="text-sm font-medium">Sustainable Solution</span>
               </div>
@@ -63,7 +63,7 @@ const SustainableProductDetail = () => {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-gradient-to-r from-green-500 to-emerald-500 hover:opacity-90 text-white rounded-full px-8 py-6 text-lg">
+                <Button className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 text-primary-foreground rounded-full px-8 py-6 text-lg">
                   Request Demo
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -93,7 +93,7 @@ const SustainableProductDetail = () => {
       </section>
 
       {/* Sustainability Impact */}
-      <section className="py-20 bg-gradient-to-r from-green-500/10 to-emerald-500/10">
+      <section className="py-20 bg-gradient-to-r from-primary/10 to-pink-500/10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ const SustainableProductDetail = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Sustainability <span className="text-green-500">Impact</span>
+              Sustainability <span className="gradient-text">Impact</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Measurable results that make a difference
@@ -114,12 +114,12 @@ const SustainableProductDetail = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-background rounded-3xl p-8 border border-green-500/20 text-center"
+              className="bg-background rounded-3xl p-8 border border-primary/20 text-center"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-6">
-                <TrendingDown className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center mx-auto mb-6">
+                <TrendingDown className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-4xl font-display font-bold text-green-500 mb-2">
+              <h3 className="text-4xl font-display font-bold text-primary mb-2">
                 {Object.values(product.sustainabilityImpact)[0]}
               </h3>
               <p className="text-muted-foreground">Resource Savings</p>
@@ -130,12 +130,12 @@ const SustainableProductDetail = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-background rounded-3xl p-8 border border-green-500/20 text-center"
+              className="bg-background rounded-3xl p-8 border border-primary/20 text-center"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-6">
-                <Leaf className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center mx-auto mb-6">
+                <Leaf className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-4xl font-display font-bold text-green-500 mb-2">
+              <h3 className="text-4xl font-display font-bold text-primary mb-2">
                 {Object.values(product.sustainabilityImpact)[1]}
               </h3>
               <p className="text-muted-foreground">Environmental Impact</p>
@@ -146,12 +146,12 @@ const SustainableProductDetail = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-background rounded-3xl p-8 border border-green-500/20 text-center"
+              className="bg-background rounded-3xl p-8 border border-primary/20 text-center"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-6">
-                <DollarSign className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center mx-auto mb-6">
+                <DollarSign className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-4xl font-display font-bold text-green-500 mb-2">
+              <h3 className="text-4xl font-display font-bold text-primary mb-2">
                 {product.sustainabilityImpact.costSavings}
               </h3>
               <p className="text-muted-foreground">Avg. Client Savings</p>
@@ -170,7 +170,7 @@ const SustainableProductDetail = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Real-time <span className="text-green-500">Dashboard</span>
+              Real-time <span className="gradient-text">Dashboard</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Monitor, analyze, and optimize with powerful visualization tools
@@ -183,12 +183,12 @@ const SustainableProductDetail = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-pink-500/20 rounded-3xl blur-3xl" />
             <div className="relative bg-background rounded-3xl border border-border/50 overflow-hidden shadow-2xl">
               <div className="flex items-center gap-2 px-6 py-4 border-b border-border/50 bg-muted/30">
-                <div className="w-3 h-3 rounded-full bg-red-500" />
+                <div className="w-3 h-3 rounded-full bg-destructive" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                <div className="w-3 h-3 rounded-full bg-green-500" />
+                <div className="w-3 h-3 rounded-full bg-primary" />
                 <span className="ml-4 text-sm text-muted-foreground">{product.name} Analytics Dashboard</span>
               </div>
 
@@ -210,7 +210,7 @@ const SustainableProductDetail = () => {
                       {[65, 78, 52, 89, 73, 45, 61].map((height, i) => (
                         <div key={i} className="flex-1 flex flex-col items-center gap-2">
                           <div 
-                            className="w-full bg-gradient-to-t from-green-500 to-emerald-400 rounded-t-lg transition-all"
+                            className="w-full bg-gradient-to-t from-primary to-pink-400 rounded-t-lg transition-all"
                             style={{ height: `${height}%` }}
                           />
                           <span className="text-xs text-muted-foreground">
@@ -224,7 +224,7 @@ const SustainableProductDetail = () => {
                   <div className="bg-muted/30 rounded-2xl p-6 border border-border/50">
                     <h4 className="font-semibold mb-4">Distribution</h4>
                     <div className="relative h-40 flex items-center justify-center">
-                      <div className="w-32 h-32 rounded-full border-8 border-green-500 border-t-emerald-400 border-r-cyan-400" />
+                      <div className="w-32 h-32 rounded-full border-8 border-primary border-t-pink-400 border-r-pink-500" />
                       <div className="absolute text-center">
                         <p className="text-2xl font-bold">72%</p>
                         <p className="text-xs text-muted-foreground">Efficiency</p>
@@ -239,7 +239,7 @@ const SustainableProductDetail = () => {
                     {["Zone A", "Zone B", "Zone C", "Zone D", "Zone E"].map((zone, i) => (
                       <div key={zone} className="text-center">
                         <div className={`w-12 h-12 rounded-xl mx-auto mb-2 flex items-center justify-center ${
-                          i === 2 ? "bg-yellow-500/20 text-yellow-500" : "bg-green-500/20 text-green-500"
+                          i === 2 ? "bg-yellow-500/20 text-yellow-500" : "bg-primary/20 text-primary"
                         }`}>
                           <Icon className="w-6 h-6" />
                         </div>
@@ -265,7 +265,7 @@ const SustainableProductDetail = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Powerful <span className="text-green-500">Features</span>
+              Powerful <span className="gradient-text">Features</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Comprehensive tools for sustainable operations
@@ -280,10 +280,10 @@ const SustainableProductDetail = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-background rounded-2xl p-6 border border-border/50 hover:border-green-500/30 transition-colors"
+                className="bg-background rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-colors"
               >
-                <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-4`}>
-                  <Check className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center mb-4">
+                  <Check className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <h3 className="font-semibold">{feature}</h3>
               </motion.div>
@@ -302,7 +302,7 @@ const SustainableProductDetail = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Key <span className="text-green-500">Benefits</span>
+              Key <span className="gradient-text">Benefits</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Drive sustainability while improving your bottom line
@@ -319,8 +319,8 @@ const SustainableProductDetail = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-background rounded-2xl p-8 border border-border/50"
               >
-                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-6`}>
-                  <span className="text-white font-bold text-xl">{index + 1}</span>
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-pink-500 flex items-center justify-center mb-6">
+                  <span className="text-primary-foreground font-bold text-xl">{index + 1}</span>
                 </div>
                 <h3 className="text-xl font-display font-bold mb-3">{benefit.title}</h3>
                 <p className="text-muted-foreground">{benefit.description}</p>
@@ -340,7 +340,7 @@ const SustainableProductDetail = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Industry <span className="text-green-500">Applications</span>
+              Industry <span className="gradient-text">Applications</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Trusted across diverse industries for sustainable transformation
@@ -355,7 +355,7 @@ const SustainableProductDetail = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-background rounded-2xl p-6 border border-border/50 text-center hover:border-green-500/30 transition-colors"
+                className="bg-background rounded-2xl p-6 border border-border/50 text-center hover:border-primary/30 transition-colors"
               >
                 <p className="font-medium text-sm">{useCase}</p>
               </motion.div>
@@ -371,11 +371,11 @@ const SustainableProductDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-green-500/20 via-background to-emerald-500/20 rounded-3xl p-12 text-center border border-green-500/20"
+            className="relative bg-gradient-to-br from-primary/20 via-background to-pink-500/20 rounded-3xl p-12 text-center border border-primary/20"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-6">
-              <Leaf className="w-4 h-4 text-green-500" />
-              <span className="text-sm font-medium text-green-500">Sustainable Future</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+              <Leaf className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">Sustainable Future</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
               Ready to Transform Your Operations?
@@ -384,11 +384,11 @@ const SustainableProductDetail = () => {
               Join the sustainability revolution with {product.name}. Schedule a demo today and see how we can help you achieve your green goals.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-gradient-to-r from-green-500 to-emerald-500 hover:opacity-90 text-white rounded-full px-8 py-6 text-lg">
+              <Button className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 text-primary-foreground rounded-full px-8 py-6 text-lg">
                 Schedule Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button variant="outline" className="rounded-full px-8 py-6 text-lg border-green-500/30 text-green-600 hover:bg-green-500/10">
+              <Button variant="outline" className="rounded-full px-8 py-6 text-lg border-border">
                 Contact Sales
               </Button>
             </div>

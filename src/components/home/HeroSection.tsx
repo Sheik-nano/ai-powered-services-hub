@@ -128,7 +128,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 1.4 }}
               className="absolute -right-4 md:-right-8 top-1/3 glass-effect rounded-xl p-4 shadow-xl hidden md:block"
             >
-              <div className="text-2xl font-bold text-green-500">+28.4%</div>
+              <div className="text-2xl font-bold text-primary">+28.4%</div>
               <div className="text-sm text-muted-foreground">Growth Rate</div>
             </motion.div>
           </motion.div>
