@@ -5,74 +5,86 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --foreground: 226 67% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 226 67% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 226 67% 27%;
 
-    --primary: 262 83% 58%;
+    /* Primary: Blue #2196F3 */
+    --primary: 207 90% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 20% 10%;
+    /* Secondary: Dark navy #172D73 */
+    --secondary: 226 67% 27%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 207 20% 96%;
+    --muted-foreground: 226 30% 46%;
 
-    --accent: 262 83% 58%;
+    /* Accent: Pink #EC5C8F */
+    --accent: 339 79% 64%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262 83% 58%;
+    --border: 207 20% 88%;
+    --input: 207 20% 88%;
+    --ring: 207 90% 54%;
 
     --radius: 0.75rem;
 
-    /* Custom DataApps colors */
-    --gradient-start: 262 83% 58%;
-    --gradient-end: 330 81% 60%;
-    --gradient-accent: 199 89% 48%;
-    --surface-soft: 220 20% 98%;
+    /* Custom DataApps colors - Logo palette */
+    --gradient-start: 226 67% 27%;
+    --gradient-end: 225 71% 51%;
+    --gradient-accent: 177 41% 59%;
+    --logo-blue: 207 90% 54%;
+    --logo-pink: 339 79% 64%;
+    --logo-teal: 177 41% 59%;
+    --surface-soft: 207 20% 98%;
     --surface-glass: 0 0% 100%;
   }
 
   .dark {
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    --background: 226 50% 6%;
+    --foreground: 207 40% 98%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 226 40% 10%;
+    --card-foreground: 207 40% 98%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 226 40% 10%;
+    --popover-foreground: 207 40% 98%;
 
-    --primary: 262 83% 65%;
+    --primary: 207 90% 58%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 225 71% 51%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 226 30% 15%;
+    --muted-foreground: 207 20% 60%;
 
-    --accent: 262 83% 65%;
+    --accent: 339 79% 64%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 207 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 262 83% 65%;
+    --border: 226 30% 18%;
+    --input: 226 30% 18%;
+    --ring: 207 90% 58%;
 
-    --surface-soft: 220 20% 8%;
-    --surface-glass: 220 20% 12%;
+    --gradient-start: 226 67% 27%;
+    --gradient-end: 225 71% 51%;
+    --gradient-accent: 177 41% 59%;
+    --logo-blue: 207 90% 58%;
+    --logo-pink: 339 79% 68%;
+    --logo-teal: 177 41% 63%;
+    --surface-soft: 226 30% 8%;
+    --surface-glass: 226 30% 12%;
   }
 }
 
@@ -92,11 +104,11 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-pink-500 to-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-logo-blue via-logo-pink to-logo-teal bg-clip-text text-transparent;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary/10 via-pink-500/5 to-cyan-500/10;
+    @apply bg-gradient-to-br from-logo-blue/10 via-logo-pink/5 to-logo-teal/10;
   }
 
   .glass-effect {

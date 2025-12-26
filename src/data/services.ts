@@ -7,7 +7,7 @@ export const services = [
     shortTitle: "Web & Mobile",
     description: "We design and develop high-performance websites and mobile applications that are secure, scalable, and user-friendly. From e-commerce platforms to data-driven dashboards and mobile apps, our solutions deliver real business results.",
     icon: Code,
-    color: "from-primary to-pink-500",
+    color: "from-logo-blue to-logo-pink",
     features: [
       "Custom Web Applications",
       "Progressive Web Apps (PWA)",
@@ -30,7 +30,7 @@ export const services = [
     shortTitle: "Enterprise Software",
     description: "Custom ERP, CRM, and industry-specific platforms built to streamline operations and improve decision-making. Whether in healthcare, education, retail, or automotive, we craft intelligent software that empowers organizations.",
     icon: Building2,
-    color: "from-primary to-pink-500",
+    color: "from-secondary to-logo-blue",
     features: [
       "Custom ERP Systems",
       "CRM Solutions",
@@ -53,7 +53,7 @@ export const services = [
     shortTitle: "Cloud Solutions",
     description: "We help businesses modernize with cloud-based platforms that automate workflows, simplify operations, and connect people with technology—driving seamless digital experiences across industries.",
     icon: Cloud,
-    color: "from-primary to-pink-500",
+    color: "from-logo-blue to-logo-teal",
     features: [
       "Cloud Migration Services",
       "Workflow Automation",
@@ -76,7 +76,7 @@ export const services = [
     shortTitle: "AI & Analytics",
     description: "Our AI and analytics services turn data into action. From predictive insights to intelligent automation, we enable organizations to optimize resources, reduce costs, and unlock new opportunities for growth.",
     icon: Brain,
-    color: "from-primary to-pink-500",
+    color: "from-logo-pink to-logo-blue",
     features: [
       "Predictive Analytics",
       "Machine Learning Models",
@@ -99,7 +99,7 @@ export const services = [
     shortTitle: "IoT Solutions",
     description: "We create connected ecosystems that integrate devices, assets, and infrastructure. Our IoT-driven solutions power smarter hospitals, sustainable buildings, water management systems, and intelligent automotive platforms.",
     icon: Cpu,
-    color: "from-primary to-pink-500",
+    color: "from-logo-teal to-logo-blue",
     features: [
       "Smart Hospital Solutions",
       "Building Automation Systems",
@@ -122,7 +122,7 @@ export const services = [
     shortTitle: "Digital Marketing",
     description: "Through targeted digital marketing and lead-generation strategies, we help brands increase their online visibility, capture high-quality leads, and drive measurable business growth.",
     icon: TrendingUp,
-    color: "from-primary to-pink-500",
+    color: "from-secondary to-logo-pink",
     features: [
       "SEO & Content Strategy",
       "Paid Advertising (PPC)",

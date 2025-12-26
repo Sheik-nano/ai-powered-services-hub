@@ -66,17 +66,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-logo-blue mt-0.5 shrink-0" />
                 <span className="text-background/70 text-sm">
                   123 Tech Park, Innovation District, Bangalore, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <Phone className="w-5 h-5 text-logo-blue shrink-0" />
                 <span className="text-background/70 text-sm">+91 (800) 123-4567</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <Mail className="w-5 h-5 text-logo-blue shrink-0" />
                 <span className="text-background/70 text-sm">info@dataapps.cloud</span>
               </li>
             </ul>
