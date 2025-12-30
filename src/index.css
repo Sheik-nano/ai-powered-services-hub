@@ -104,11 +104,11 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-logo-blue via-logo-pink to-logo-teal bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-secondary to-logo-blue bg-clip-text text-transparent;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-logo-blue/10 via-logo-pink/5 to-logo-teal/10;
+    @apply bg-gradient-to-br from-secondary/10 to-logo-blue/10;
   }
 
   .glass-effect {
