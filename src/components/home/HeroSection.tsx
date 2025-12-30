@@ -15,8 +15,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Gradient */}
       <div className="absolute inset-0 gradient-bg" />
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-logo-blue/20 via-logo-pink/10 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-logo-teal/20 via-logo-blue/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-logo-blue/20 to-secondary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-secondary/15 to-logo-blue/10 rounded-full blur-3xl" />
 
       {/* Floating Icons */}
       {floatingIcons.map(({ Icon, position, delay }, index) => (

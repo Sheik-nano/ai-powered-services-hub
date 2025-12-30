@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: "Services", path: "/#services", dropdown: "services" },
     { name: "Products", path: "/#products", dropdown: "products" },
     { name: "Sustainable Products", path: "#", dropdown: "sustainable" },
-    { name: "Contact", path: "/#contact" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
