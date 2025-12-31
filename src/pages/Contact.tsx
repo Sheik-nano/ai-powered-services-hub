@@ -76,8 +76,8 @@ const Contact = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 gradient-bg" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-logo-blue/20 to-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 hero-gradient" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary/15 to-purple-light/10 rounded-full blur-3xl" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -86,10 +86,10 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-6">
               <span className="text-sm font-medium text-primary">Get in Touch</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-secondary">
               Let's Build Something <span className="gradient-text">Amazing Together</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
@@ -112,7 +112,7 @@ const Contact = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-logo-blue flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-4">
                   <reason.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
@@ -154,7 +154,7 @@ const Contact = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-start gap-4"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary to-logo-blue flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0">
                       <item.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -284,7 +284,7 @@ const Contact = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-white rounded-xl h-14 text-lg font-medium group"
+                    className="w-full bg-secondary hover:bg-secondary/90 text-white rounded-xl h-14 text-lg font-medium group"
                   >
                     Send Message
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -300,7 +300,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-secondary to-logo-blue">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
