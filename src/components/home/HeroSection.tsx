@@ -4,22 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const floatingIcons = [
-  { Icon: Zap, position: "top-20 left-[8%]", delay: 0, color: "bg-orange text-white" },
-  { Icon: Grid3X3, position: "top-28 right-[12%]", delay: 0.5, color: "bg-primary text-white" },
-  { Icon: Sparkles, position: "bottom-48 left-[12%]", delay: 1, color: "bg-teal text-white" },
-  { Icon: BarChart3, position: "bottom-36 right-[8%]", delay: 1.5, color: "bg-primary text-white" },
+  { Icon: Zap, position: "top-20 left-[8%]", delay: 0, color: "bg-logo-pink text-white" },
+  { Icon: Grid3X3, position: "top-28 right-[12%]", delay: 0.5, color: "bg-logo-blue text-white" },
+  { Icon: Sparkles, position: "bottom-48 left-[12%]", delay: 1, color: "bg-logo-teal text-white" },
+  { Icon: BarChart3, position: "bottom-36 right-[8%]", delay: 1.5, color: "bg-medium-blue text-white" },
 ];
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Gradient - LumenAI style cream/peach */}
+      {/* Background Gradient - Data Apps style blue/pink/teal */}
       <div className="absolute inset-0 hero-gradient" />
       
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-primary/10 to-purple-light/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-peach to-orange/10 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-logo-blue/15 to-logo-pink/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-logo-teal/15 to-logo-pink/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-logo-blue/8 to-transparent rounded-full blur-3xl" />
 
       {/* Floating Icons */}
       {floatingIcons.map(({ Icon, position, delay, color }, index) => (
@@ -142,8 +142,8 @@ const HeroSection = () => {
               className="absolute -right-4 md:-right-8 top-1/3 bg-card rounded-2xl p-4 shadow-xl border border-border hidden md:block"
             >
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-teal/20 flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-teal" />
+                <div className="w-10 h-10 rounded-xl bg-logo-teal/20 flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-logo-teal" />
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-foreground">+28.4%</div>

@@ -77,7 +77,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary/15 to-purple-light/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-logo-blue/15 to-logo-pink/10 rounded-full blur-3xl" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -112,7 +112,7 @@ const Contact = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-logo-blue flex items-center justify-center mx-auto mb-4">
                   <reason.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
@@ -154,7 +154,7 @@ const Contact = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-start gap-4"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-logo-blue flex items-center justify-center shrink-0">
                       <item.icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
