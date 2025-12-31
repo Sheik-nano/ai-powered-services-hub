@@ -4,87 +4,94 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 226 67% 27%;
+    /* LumenAI inspired theme - Light cream/peach with purple accent */
+    --background: 30 50% 98%;
+    --foreground: 240 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 226 67% 27%;
+    --card-foreground: 240 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 226 67% 27%;
+    --popover-foreground: 240 10% 15%;
 
-    /* Primary: Blue #2196F3 */
-    --primary: 207 90% 54%;
+    /* Primary: Purple #7C3AED */
+    --primary: 263 70% 58%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Dark navy #172D73 */
-    --secondary: 226 67% 27%;
+    /* Secondary: Dark charcoal */
+    --secondary: 240 10% 15%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 207 20% 96%;
-    --muted-foreground: 226 30% 46%;
+    --muted: 30 20% 96%;
+    --muted-foreground: 240 5% 46%;
 
-    /* Accent: Pink #EC5C8F */
-    --accent: 339 79% 64%;
+    /* Accent: Coral/Orange */
+    --accent: 24 95% 64%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 207 20% 88%;
-    --input: 207 20% 88%;
-    --ring: 207 90% 54%;
+    --border: 30 15% 90%;
+    --input: 30 15% 90%;
+    --ring: 263 70% 58%;
 
     --radius: 0.75rem;
 
-    /* Custom DataApps colors - Logo palette */
-    --gradient-start: 226 67% 27%;
-    --gradient-end: 225 71% 51%;
-    --gradient-accent: 177 41% 59%;
-    --logo-blue: 207 90% 54%;
-    --logo-pink: 339 79% 64%;
-    --logo-teal: 177 41% 59%;
-    --surface-soft: 207 20% 98%;
+    /* Custom theme colors */
+    --gradient-start: 263 70% 58%;
+    --gradient-end: 280 80% 65%;
+    --gradient-accent: 24 95% 64%;
+    --purple: 263 70% 58%;
+    --purple-light: 263 70% 75%;
+    --orange: 24 95% 64%;
+    --teal: 177 60% 50%;
+    --cream: 30 50% 98%;
+    --peach: 20 80% 94%;
+    --surface-soft: 30 30% 97%;
     --surface-glass: 0 0% 100%;
   }
 
   .dark {
-    --background: 226 50% 6%;
-    --foreground: 207 40% 98%;
+    --background: 240 15% 8%;
+    --foreground: 30 20% 98%;
 
-    --card: 226 40% 10%;
-    --card-foreground: 207 40% 98%;
+    --card: 240 12% 12%;
+    --card-foreground: 30 20% 98%;
 
-    --popover: 226 40% 10%;
-    --popover-foreground: 207 40% 98%;
+    --popover: 240 12% 12%;
+    --popover-foreground: 30 20% 98%;
 
-    --primary: 207 90% 58%;
+    --primary: 263 70% 62%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 225 71% 51%;
+    --secondary: 240 10% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 226 30% 15%;
-    --muted-foreground: 207 20% 60%;
+    --muted: 240 10% 18%;
+    --muted-foreground: 30 10% 60%;
 
-    --accent: 339 79% 64%;
+    --accent: 24 95% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
-    --destructive-foreground: 207 40% 98%;
+    --destructive-foreground: 30 20% 98%;
 
-    --border: 226 30% 18%;
-    --input: 226 30% 18%;
-    --ring: 207 90% 58%;
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 263 70% 62%;
 
-    --gradient-start: 226 67% 27%;
-    --gradient-end: 225 71% 51%;
-    --gradient-accent: 177 41% 59%;
-    --logo-blue: 207 90% 58%;
-    --logo-pink: 339 79% 68%;
-    --logo-teal: 177 41% 63%;
-    --surface-soft: 226 30% 8%;
-    --surface-glass: 226 30% 12%;
+    --gradient-start: 263 70% 58%;
+    --gradient-end: 280 80% 65%;
+    --gradient-accent: 24 95% 64%;
+    --purple: 263 70% 62%;
+    --purple-light: 263 70% 78%;
+    --orange: 24 95% 60%;
+    --teal: 177 60% 55%;
+    --cream: 30 20% 12%;
+    --peach: 20 30% 15%;
+    --surface-soft: 240 10% 10%;
+    --surface-glass: 240 12% 14%;
   }
 }
 
@@ -104,15 +111,22 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-secondary to-logo-blue bg-clip-text text-transparent;
+    background: linear-gradient(135deg, hsl(263 70% 58%) 0%, hsl(280 80% 65%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-secondary/10 to-logo-blue/10;
+    background: linear-gradient(135deg, hsl(30 50% 98%) 0%, hsl(0 0% 100%) 50%, hsl(20 80% 94%) 100%);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(30 50% 98%) 0%, hsl(0 0% 100%) 40%, hsl(20 80% 94%) 70%, hsl(263 70% 95%) 100%);
   }
 
   .glass-effect {
-    @apply bg-surface-glass/80 backdrop-blur-xl border border-border/50;
+    @apply bg-card/90 backdrop-blur-xl border border-border/50 shadow-lg;
   }
 
   .animate-float {

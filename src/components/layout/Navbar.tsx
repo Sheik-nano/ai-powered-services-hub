@@ -146,7 +146,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-secondary-foreground rounded-full px-6">
+            <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full px-6 shadow-md">
               Book a Demo
             </Button>
           </div>
@@ -239,7 +239,7 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              <Button className="w-full bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-secondary-foreground rounded-full mt-4">
+              <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full mt-4 shadow-md">
                 Book a Demo
               </Button>
             </div>

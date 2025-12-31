@@ -7,7 +7,7 @@ export const enterpriseProducts = [
     fullName: "Intelligent Hospital Management",
     shortTitle: "IHM - Hospital Management",
     icon: Hospital,
-    color: "from-secondary to-logo-blue",
+    color: "from-primary to-purple-light",
     description: "A powerful, cloud-based platform transforming healthcare administration.",
     longDescription: "IHM is a comprehensive hospital management system that simplifies patient registration, in/outpatient management, EMR, billing, OT coordination, pharmacy, and lab operations. Our platform enables healthcare providers to deliver better patient care through streamlined operations and real-time analytics.",
     features: [
@@ -35,7 +35,7 @@ export const enterpriseProducts = [
     fullName: "Intelligent Learning Management",
     shortTitle: "ILM - Learning Management",
     icon: GraduationCap,
-    color: "from-secondary to-logo-blue",
+    color: "from-orange to-accent",
     description: "A complete digital suite for schools and colleges.",
     longDescription: "ILM transforms educational institutions with a comprehensive digital platform managing admissions, student/faculty records, lesson plans, attendance, exams, library, transportation, hostel, and fee collection. Empower your institution with data-driven insights and streamlined operations.",
     features: [
@@ -63,7 +63,7 @@ export const enterpriseProducts = [
     fullName: "Automobile Service Center ERP",
     shortTitle: "MotoSuite - Auto ERP",
     icon: Car,
-    color: "from-secondary to-logo-blue",
+    color: "from-teal to-primary",
     description: "An ERP system designed for vehicle service centers.",
     longDescription: "MotoSuite ERP streamlines job card creation, technician management, inventory control, and customer interactions. With AI-based vehicle scratch detection and comprehensive mobile apps, transform your service center into a modern, efficient operation.",
     features: [
@@ -91,7 +91,7 @@ export const enterpriseProducts = [
     fullName: "Hajj & Umrah Operations Platform",
     shortTitle: "Pilgrim360 - Hajj & Umrah",
     icon: Plane,
-    color: "from-secondary to-logo-blue",
+    color: "from-purple-light to-primary",
     description: "Connecting all Hajj & Umrah operations seamlessly.",
     longDescription: "Pilgrim360 is a complete digital suite for Umrah agents, simplifying batch creation, package management, and pilgrim registration. With AI-powered passport scanning, photo capture, and comprehensive visa tracking, manage your pilgrimage operations with ease.",
     features: [
@@ -122,7 +122,7 @@ export const sustainableProducts = [
     fullName: "Smart Energy Management System",
     shortTitle: "Energy Management",
     icon: Zap,
-    color: "from-secondary to-logo-blue",
+    color: "from-orange to-accent",
     description: "Intelligent energy monitoring and optimization for sustainable operations.",
     longDescription: "Our Smart Energy Management System provides real-time monitoring, analysis, and optimization of energy consumption across your facilities. Reduce costs, lower carbon footprint, and achieve sustainability goals with AI-powered insights and automated controls.",
     features: [
@@ -163,7 +163,7 @@ export const sustainableProducts = [
     fullName: "Smart Water Management System",
     shortTitle: "Water Automation",
     icon: Droplets,
-    color: "from-secondary to-logo-blue",
+    color: "from-teal to-primary",
     description: "IoT-enabled water monitoring and conservation system.",
     longDescription: "Transform water management with our comprehensive IoT-enabled platform. Monitor consumption, detect leaks, optimize irrigation, and ensure quality compliance. Our system helps organizations conserve water resources while reducing operational costs.",
     features: [
@@ -204,7 +204,7 @@ export const sustainableProducts = [
     fullName: "Intelligent Building Management System",
     shortTitle: "Smart Building",
     icon: Building2,
-    color: "from-secondary to-logo-blue",
+    color: "from-primary to-purple-light",
     description: "Comprehensive building automation for sustainable operations.",
     longDescription: "Create intelligent, sustainable buildings with our comprehensive BMS platform. Integrate HVAC, lighting, security, and occupancy systems into a unified dashboard. Optimize resource usage, enhance comfort, and achieve green building certifications.",
     features: [
