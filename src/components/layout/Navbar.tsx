@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: "Services", path: "/#services", dropdown: "services" },
     { name: "Products", path: "/#products", dropdown: "products" },
     { name: "Sustainable Products", path: "#", dropdown: "sustainable" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/#contact" },
   ];
 
   return (
@@ -146,7 +146,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full px-6 shadow-md">
+            <Button className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 transition-opacity text-primary-foreground rounded-full px-6">
               Book a Demo
             </Button>
           </div>
@@ -239,7 +239,7 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full mt-4 shadow-md">
+              <Button className="w-full bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 transition-opacity text-primary-foreground rounded-full mt-4">
                 Book a Demo
               </Button>
             </div>

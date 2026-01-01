@@ -72,7 +72,7 @@ const ServiceDetail = () => {
 
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-secondary to-logo-blue hover:opacity-90 transition-opacity text-secondary-foreground rounded-full px-8 h-14 text-lg font-medium group"
+                className="bg-gradient-to-r from-primary to-pink-500 hover:opacity-90 transition-opacity text-primary-foreground rounded-full px-8 h-14 text-lg font-medium group"
               >
                 Get Started
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -200,7 +200,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-secondary to-logo-blue">
+      <section className="py-24 bg-gradient-to-br from-primary to-pink-500">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
